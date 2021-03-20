@@ -31,12 +31,12 @@ public class ToDoList {
 	public Collection<Task> getAllTasks() {
 		return tasks.values();
 	}
-//	public Collection<Task> getCompletedTasks() {
-//		Collection<Task> completedTasks = new ArrayList<Task> ();
-//		Collection<Task> allTasks = new ArrayList<Task> ();
-//		allTasks = getAllTasks();
-//		for (Task task: allTasks) 
-//			if (task.isComplete() == true) completedTasks.add(task);
-//		return completedTasks;
-//	}
+	public Collection<Task> getCompletedTasks() {
+		Collection<Task> completedTasks = new ArrayList<Task> ();
+		Collection<Task> allTasks = new ArrayList<Task> ();
+		allTasks = getAllTasks();
+		for (Task task: allTasks) 
+			if (task.isComplete() == true) completedTasks.add(task);
+		return completedTasks;
+	}
 }
